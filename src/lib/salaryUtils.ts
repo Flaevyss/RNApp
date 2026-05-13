@@ -1,7 +1,7 @@
-import { Revenue, ScheduleEntry, SalaryDetail, User } from './types';
+import { Revenue, ScheduleEntry, SalaryDetail, UserProfile } from './types';
 
 export const calculateSalary = (
-  user: User,
+  user: UserProfile,
   schedule: ScheduleEntry[],
   revenues: Revenue[]
 ): { total: number; okladTotal: number; bonusTotal: number; details: SalaryDetail[] } => {
@@ -16,7 +16,7 @@ export const calculateSalary = (
     const start = shift.startTime.split(':').map(Number);
     const end = shift.endTime.split(':').map(Number);
     let hours = end[0] - start[0] + (end[1] - start[1]) / 60;
-    if (hours < 0) hours += 24; // Handle overnight shifts if any
+    if (hours < 0) hours += 24;
 
     const okladPart = (user.oklad / 12) * hours;
     okladTotal += okladPart;

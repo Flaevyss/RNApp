@@ -1,30 +1,30 @@
-export interface User {
+export interface UserProfile {
   id: string;
   name: string;
   email: string;
   role: 'admin' | 'user';
   branch: string;
-  oklad: number; // Оклад за 12 часов
+  oklad: number;
   avatarUrl?: string;
 }
 
 export interface ScheduleEntry {
   id: string;
   employeeId: string;
-  date: string; // YYYY-MM-DD
-  startTime: string; // HH:mm
-  endTime: string; // HH:mm
+  date: string;
+  startTime: string;
+  endTime: string;
   status: 'work' | 'off';
 }
 
 export interface Revenue {
   id: string;
-  date: string; // YYYY-MM-DD
+  date: string;
   idealPlan: number;
   grossRevenue: number;
   expenses: number;
   employeeCount: number;
-  timestamp: any; // ServerTimestamp
+  timestamp: any;
 }
 
 export interface SalaryDetail {
