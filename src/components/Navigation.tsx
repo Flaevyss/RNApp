@@ -56,11 +56,11 @@ export default function Navigation() {
                  <img src={user.avatarUrl} alt="avatar" className="w-full h-full object-cover" />
                ) : (
                  <div className="w-full h-full flex items-center justify-center text-accent text-2xl font-bold">
-                   {user.name.charAt(0)}
+                   {user.name?.charAt(0) || '?'}
                  </div>
                )}
             </div>
-            <h2 className="font-bold text-lg text-center">{user.name}</h2>
+            <h2 className="font-bold text-lg text-center">{user.name || '...'}</h2>
             <p className="text-sm text-slate-500">{user.branch}</p>
           </div>
 
