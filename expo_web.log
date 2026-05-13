@@ -1,0 +1,14 @@
+Starting project at /app
+Starting Metro Bundler
+The following packages should be updated for best compatibility with the installed expo version:
+  react-dom@19.0.0 - expected version: 19.1.0
+Your project may not work correctly until you install the expected versions of the packages.
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web ./index.ts ▓▓▓▓▓▓▓▓▓▓▓▓░░░░ 76.4% (146/167)
+Web Bundled 5998ms index.ts (206 modules)
+ LOG  [web] Logs will appear in the browser console
+Web ./index.ts ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web Bundled 14ms index.ts (1 module)
+ LOG  [web] Logs will appear in the browser console
